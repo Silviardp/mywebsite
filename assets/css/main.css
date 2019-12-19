@@ -2727,6 +2727,8 @@ html {
     padding: 0 27px;
 }
 
+/* dark-mode */
+
 .dark-mode {
 	background: #000428;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #010911, #000428);  /* Chrome 10-25, Safari 5.1-6 */
@@ -2802,4 +2804,10 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .switch {
+		position: absolute;
+	}
 }
