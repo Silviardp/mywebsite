@@ -2787,7 +2787,7 @@ html {
 }
 
 input:checked + .slider {
-  background-color: deeppink;
+  background-color: #6D2969;
 }
 
 input:checked + .slider:before {
