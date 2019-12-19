@@ -1409,14 +1409,9 @@
 	}
 
 	body {
-/*		background-color: #000;
-		background-image: url(../../images/bg.jpg);
-		background-size: cover;
-		background-position: top center;*/
-background: #C33764;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+		background: #C33764;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	}
 
@@ -2205,7 +2200,7 @@ background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, F
 
 /* Button */
 
-	input[type="submit"],
+input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
@@ -2218,7 +2213,7 @@ background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, F
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #FF6382;
+		background-color: white;
 		border-radius: 4px;
 		border: 0;
 		color: !important;
@@ -2732,18 +2727,79 @@ html {
     padding: 0 27px;
 }
 
-
-/* .gotopbtn {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 40px;
-  right: 50px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  color: white;
-  font-size: 22px;
+.dark-mode {
+	background: #000428;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #010911, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #010911, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:darkgrey;
 }
 
- */
+.dark-mode h2 {
+	color:darkgrey;
+}
+
+.dark-mode h3 {
+	color:darkgrey;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+	height: 18px;
+	margin: 12px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	background-color: #3D266E;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 30px;
+	border: 1px solid darkgray;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+	height: 13px;
+	width: 13px;
+	left: 3px;
+	top: 2px;
+	bottom: 3px;
+  background-color: whitesmoke;
+  -webkit-transition: .4s;
+	transition: .4s;
+	margin: -1px;
+}
+
+input:checked + .slider {
+  background-color: deeppink;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+	transform: translateX(26px);
+	left: -3px;
+}
+
+// Rounded sliders
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
