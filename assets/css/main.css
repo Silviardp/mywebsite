@@ -1473,7 +1473,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #b29ba8;
+		/* color: #b29ba8; */
 		font-weight: 200;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -2720,7 +2720,8 @@ html {
   font-size: 15px;
   margin-top: 10px;
   padding: 5px;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: white;
 }
 
 .fab:before {
