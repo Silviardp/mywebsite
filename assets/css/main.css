@@ -2467,6 +2467,17 @@ input[type="submit"],
 
 		@media screen and (max-width: 480px) {
 
+			.cards-projects {
+				grid-template-columns: 1fr;
+			 }
+
+			 .cards-projects a img {
+				display: block;
+				width: 100%;
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+		}
+
 			.thumbnails {
 				display: block;
 			}
@@ -2491,6 +2502,22 @@ input[type="submit"],
 		}
 
     @media screen and (max-width: 600px) {
+
+			.cards-projects {
+				grid-template-columns: 1fr !important;
+				display: block !important;	
+			 } 
+
+			.card-projet {
+				margin-bottom: 2rem;
+			}
+
+			 .cards-projects a img {
+				display: block;
+				width: 100%;
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+		}
 
       .thumbnails {
         display: block;
@@ -2811,4 +2838,55 @@ input:checked + .slider:before {
   .switch {
 		position: absolute;
 	}
+}
+
+
+.cards-projects {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-auto-rows: auto;
+ grid-gap: 6rem;
+	 
+}
+.card-project {
+ border: 2px solid #e7e7e7;
+ border-radius: 4px;
+ padding: .5rem;
+}
+
+.cards-projects a {
+	-moz-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	border-bottom: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.075);
+	cursor: pointer;
+	outline: 0;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.cards-projects a:hover {
+		background-color: rgba(255, 255, 255, 0.25);
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #FF6382;
+}
+
+.cards-projects img {
+	display: block;
+	width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;	
+}
+
+.card-projet h3 {
+	font-size: 1.1em;
+	margin-top: 8px;
+	font-weight: bold;
 }
