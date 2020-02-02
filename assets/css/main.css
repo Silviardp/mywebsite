@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200"); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
 
 /*
 	Visualize by TEMPLATED
@@ -1409,9 +1410,7 @@
 	}
 
 	body {
-		background: #C33764;  /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #e1e8f0;
 
 	}
 
@@ -1429,8 +1428,8 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.65);
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color: #393f4d;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 13pt;
 		font-weight: 200;
 		line-height: 1.65;
@@ -1460,7 +1459,7 @@
 		}
 
 	strong, b {
-		color: #ffffff;
+		color:#fea49f;
 		font-weight: 200;
 	}
 
@@ -1492,8 +1491,12 @@
 
 		}
 
+  #header h1 {
+    font-size: 2.5em;
+  }
+
 	h1 {
-		font-size: 1.75em;
+		font-size: 2em;
 	}
 
 		@media screen and (max-width: 980px) {
@@ -1585,7 +1588,7 @@
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px rgba(255, 255, 255, 0.25);
+		border-bottom: solid 1px #393f4d; ;
 		margin: 2em 0;
 	}
 
@@ -1612,7 +1615,6 @@
 	}
 
 	header p {
-		color: rgba(255, 255, 255, 0.35);
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -1883,7 +1885,7 @@
 			border-radius: 100%;
 			display: inline-block;
 			padding: 0.5em;
-			border: solid 1px rgba(255, 255, 255, 0.25);
+			border: solid 1px #393f4d;
 			background-color: rgba(255, 255, 255, 0.075);
 		}
 
@@ -1896,7 +1898,9 @@
 			}
 
 			.icon.style2:hover {
-				background-color: rgba(255, 255, 255, 0.25);
+        background-color: #fea49f;
+        text-decoration: none;
+        border: #fea49f;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -2001,7 +2005,8 @@
 		ul.icons {
 			cursor: default;
 			list-style: none;
-			padding-left: 0;
+      padding-left: 0;
+      padding-top: 15px;
 		}
 
 			ul.icons li {
@@ -2505,8 +2510,8 @@ input[type="submit"],
 
 			.cards-projects {
 				grid-template-columns: 1fr !important;
-				display: block !important;	
-			 } 
+				display: block !important;
+			 }
 
 			.card-projet {
 				margin-bottom: 2rem;
@@ -2639,12 +2644,9 @@ input[type="submit"],
 
 	#header {
 		text-align: center;
-		padding: 6em 0 4em 0;
+		padding: 3em 0 4em 0;
 	}
 
-		#header h1 {
-			color: rgba(255, 255, 255, 0.65);
-		}
 
 		#header .avatar {
 			border-radius: 100%;
@@ -2658,7 +2660,7 @@ input[type="submit"],
 			#header .avatar img {
 				border-radius: 100%;
 				display: block;
-				width: 10em;
+				width: 11em;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -2686,7 +2688,7 @@ html {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #393f4d;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -2735,6 +2737,16 @@ html {
 
 #about {
   margin-bottom:75px;
+  margin-top: -12px;
+  padding-top: 34px;
+  padding-bottom: 23px;
+  margin-bottom: 40px;
+  background-color:white;
+}
+
+#about p {
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 #technologies {
@@ -2747,8 +2759,8 @@ html {
   font-size: 15px;
   margin-top: 10px;
   padding: 5px;
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	color: white;
+	font-family: 'Montserrat', sans-serif;
+	color:#393f4d;
 }
 
 .fab:before {
@@ -2762,6 +2774,18 @@ html {
 	background: -webkit-linear-gradient(to right, #010911, #000428);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #010911, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color:darkgrey;
+}
+
+.dark-mode #about {
+  background: #000428;
+}
+
+.dark-mode .description {
+  background: #000428;
+}
+
+.dark-mode .topbanner {
+  background: #000428;
 }
 
 .dark-mode h2 {
@@ -2780,7 +2804,7 @@ html {
 	margin: 14px 16px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -2793,7 +2817,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-	background-color: #3D266E;
+	background-color:#fea49f;
 	-webkit-transition: .4s;
 	transition: .4s;
 	border-radius: 30px;
@@ -2815,7 +2839,7 @@ html {
 }
 
 input:checked + .slider {
-  background-color: #6D2969;
+  background-color: #fea49f;
 }
 
 input:checked + .slider:before {
@@ -2846,7 +2870,7 @@ input:checked + .slider:before {
  grid-template-columns: 1fr 1fr;
  grid-auto-rows: auto;
  grid-gap: 6rem;
-	 
+
 }
 .card-project {
  border: 2px solid #e7e7e7;
@@ -2865,7 +2889,7 @@ input:checked + .slider:before {
 	height: 100%;
 	text-align: center;
 	border-radius: 4px;
-	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+	box-shadow: 0 15px 35px rgba(126,87,88,0.1), 0 1px 10px rgba(0,0,0,0.07);
 	background-color: rgba(255, 255, 255, 0.075);
 	cursor: pointer;
 	outline: 0;
@@ -2874,19 +2898,39 @@ input:checked + .slider:before {
 }
 
 .cards-projects a:hover {
-		background-color: rgba(255, 255, 255, 0.25);
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #FF6382;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0;
+    color: #393f4d;
 }
 
 .cards-projects img {
 	display: block;
 	width: 100%;
 	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;	
+	border-top-right-radius: 4px;
 }
 
 .card-projet h3 {
 	font-size: 1.1em;
-	margin-top: 8px;
+	margin-top: 18px;
 	font-weight: bold;
+}
+
+.topbanner {
+  background-color: white;
+}
+
+.description {
+  margin-top: -12px;
+  padding-top: 40px;
+  padding-bottom: 23px;
+  background-color:white;
+}
+
+.description h3 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#header h2 {
+  margin-bottom: 60px;
 }
