@@ -2946,12 +2946,14 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 700px) {
   #about p {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: justify;
   }
 
   .description h3 {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: justify;
   }
 }
