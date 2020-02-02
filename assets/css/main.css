@@ -2938,10 +2938,16 @@ input:checked + .slider:before {
 }
 
 .description a:hover {
-  color: #fea49f;
+  color: white;
   text-decoration: none;
+  border-bottom-color: transparent;
 }
 
+.description h3 a:hover {
+  color: #fea49f;
+  text-decoration: none;
+  border-bottom-color: transparent;
+}
 
 
 @media screen and (max-width: 700px) {
