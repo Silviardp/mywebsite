@@ -2747,6 +2747,7 @@ html {
 #about p {
     padding-left: 80px;
     padding-right: 80px;
+    text-align: unset;
 }
 
 #technologies {
@@ -2929,8 +2930,28 @@ input:checked + .slider:before {
 .description h3 {
   padding-left: 80px;
   padding-right: 80px;
+  text-align: unset;
 }
 
 #header h2 {
   margin-bottom: 60px;
+}
+
+.description a:hover {
+  color: #fea49f;
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  #about p {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .description h3 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
