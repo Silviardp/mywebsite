@@ -2797,6 +2797,10 @@ html {
 	color:darkgrey;
 }
 
+.dark-mode .cards-projects a {
+  background-color: #000428;
+}
+
 .switch {
   position: relative;
   display: inline-block;
