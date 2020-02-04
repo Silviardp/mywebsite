@@ -3059,6 +3059,14 @@ input:checked + .slider:before {
     padding-right: 10px;
     text-align: justify;
   }
+
+  .card-projet {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    margin: 40px;
+    overflow: hidden;
+}
 }
 
 .card-projet p {
